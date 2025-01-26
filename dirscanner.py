@@ -72,9 +72,9 @@ http://exemplo.com OU https://exemplo.com''')
     for i in range(threads):
         inicio = i * tamanho
         if i == threads - 1:
-            fim = qtdLinhas  # Última thread pega o restante
+            fim = qtdLinhas
         else:
-            fim = (i + 1) * tamanho  # Corrigido erro de sintaxe
+            fim = (i + 1) * tamanho
 
         sublist = linhas[inicio:fim]
 
