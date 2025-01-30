@@ -1,5 +1,6 @@
 # Dirscanner
 Script feito em python para enumerar sites e encontrar diretórios ocultos
+
 Disponibilizei também uma wordlist caso você não tenha nenhuma.
 Necessário instalar apenas a biblioteca requests
 
