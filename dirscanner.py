@@ -31,15 +31,14 @@ def main():
     Github do criador: https://github.com/Gusbtc\n''')
 
         url = args.url
+        wordlist = args.wordlist
+        threads = args.threads
 
         if "http" not in url:
             print(f'''
     Use um formato válido para URL: 
     http://exemplo.com OU https://exemplo.com''')
             quit()
-
-        wordlist = args.wordlist
-        threads = args.threads
 
         # Verificar se a wordlist existe
         try:
@@ -50,7 +49,7 @@ def main():
             print('Não foi possível abrir este arquivo.')
             quit()
 
-        # Adicionar barra ao final da URL, se necessário
+        # Adicionar barra ao final da URL
         if url[-1] != "/":
             url += "/"
 
@@ -83,9 +82,9 @@ def main():
         for i in range(threads):
             inicio = i * tamanho
             if i == threads - 1:
-                fim = qtdLinhas  # Última thread pega o restante
+                fim = qtdLinhas
             else:
-                fim = (i + 1) * tamanho  # Corrigido erro de sintaxe
+                fim = (i + 1) * tamanho
 
             sublist = linhas[inicio:fim]
 
