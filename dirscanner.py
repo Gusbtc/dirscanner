@@ -7,7 +7,7 @@ def main():
 
         parser = argparse.ArgumentParser(
             prog="Dirscanner",
-            description="Um escanner que busca por diretórios ocultos em aplicações web usando uma wordlist",
+            description="Um escaner que busca por diretórios ocultos em aplicações web usando uma wordlist",
         )
 
         parser.add_argument('-w', '--wordlist', help='A wordlist que será usada', required=True, metavar='')
