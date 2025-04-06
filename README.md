@@ -29,9 +29,3 @@ python3 dirscanner.py -u https://example.com -w common.txt -t 30
 - `-u`, `--url`       → Target URL (required)  
 - `-w`, `--wordlist`  → Wordlist file (required)  
 - `-t`, `--threads`   → Number of threads (default: 30)  
-
----
-
-## ⚠️ Legal
-
-For **educational and authorized use**
