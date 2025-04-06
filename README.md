@@ -15,6 +15,11 @@ This tool uses multithreading to test paths from a wordlist against a target URL
 ```bash
 python3 dirscanner.py -u <url> -w <wordlist> -t <threads>
 ```
+## ⚙️ Options
+
+- `-u`, `--url`       → Target URL (required)  
+- `-w`, `--wordlist`  → Wordlist file (required)  
+- `-t`, `--threads`   → Number of threads (default: 30)  
 
 ### Example:
 
@@ -24,8 +29,3 @@ python3 dirscanner.py -u https://example.com -w common.txt -t 30
 
 ---
 
-## ⚙️ Options
-
-- `-u`, `--url`       → Target URL (required)  
-- `-w`, `--wordlist`  → Wordlist file (required)  
-- `-t`, `--threads`   → Number of threads (default: 30)  
