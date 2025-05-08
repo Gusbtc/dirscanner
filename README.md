@@ -27,5 +27,3 @@ python3 dirscanner.py -u <url> -w <wordlist> -t <threads>
 python3 dirscanner.py -u https://example.com -w common.txt -t 30
 ```
 
----
-
